@@ -1,0 +1,24 @@
+services:
+  latex:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: latex-devcontainer
+    working_dir: /workspaces
+
+    # ports:
+
+    volumes:
+      - ~/latex-cfg:/workspaces:cached
+      # - ${SSH_AUTH_SOCK}:/ssh-agent
+
+    # environment:
+      # SSH_AUTH_SOCK: /ssh-agent
+
+    # cap_add:
+    #   - SYS_PTRACE
+    # security_opt:
+    #  - seccomp:unconfined
+
+    command: sleep infinity
