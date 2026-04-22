@@ -25,6 +25,8 @@
     }
   ],
 
+  "postCreateCommand": "sudo chown -R texlive:texlive /workspaces/build",
+
   "customizations": {
     "vscode": {
       "extensions": [

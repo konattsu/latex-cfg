@@ -2,4 +2,6 @@
     "files.associations": {
         "*.tex": "latex"
     },
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.formatting.latex": "latexindent"
 }
